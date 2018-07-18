@@ -1,0 +1,6 @@
+module RxOptional {
+  umbrella header "RxOptional-umbrella.h"
+
+  export *
+  module * { export * }
+}

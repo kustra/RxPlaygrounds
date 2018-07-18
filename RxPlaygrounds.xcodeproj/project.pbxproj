@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		583068CE201612B000561CB7 /* RxPlaygrounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 583068CC201612B000561CB7 /* RxPlaygrounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		583068D52016132500561CB7 /* frameworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583068D42016132500561CB7 /* frameworks.swift */; };
-		AF243F5C026E016E45A68B76 /* Pods_RxPlaygrounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8466844EBF97E77ED97DCF3 /* Pods_RxPlaygrounds.framework */; };
+		D32E911512051D5B259492E9 /* libPods-RxPlaygrounds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEEFE64694EC9A87BC2E5B1 /* libPods-RxPlaygrounds.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		327D1B1716B10F52DA8FAAA1 /* Pods-RxPlaygrounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPlaygrounds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPlaygrounds/Pods-RxPlaygrounds.debug.xcconfig"; sourceTree = "<group>"; };
+		4CEEFE64694EC9A87BC2E5B1 /* libPods-RxPlaygrounds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxPlaygrounds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58154BC2204CC317006CE1CA /* WeakSelfDispose.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WeakSelfDispose.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		583068C9201612B000561CB7 /* RxPlaygrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPlaygrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583068CC201612B000561CB7 /* RxPlaygrounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxPlaygrounds.h; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		58A416072023542900844EF0 /* Schedulers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Schedulers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		58F7EDDD2028DA230098D370 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C47CC758CA2234BDD12CE5DC /* Pods-RxPlaygrounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPlaygrounds.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPlaygrounds/Pods-RxPlaygrounds.release.xcconfig"; sourceTree = "<group>"; };
-		D8466844EBF97E77ED97DCF3 /* Pods_RxPlaygrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPlaygrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF243F5C026E016E45A68B76 /* Pods_RxPlaygrounds.framework in Frameworks */,
+				D32E911512051D5B259492E9 /* libPods-RxPlaygrounds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 		8F2D8F680477C7D6B32BC82D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D8466844EBF97E77ED97DCF3 /* Pods_RxPlaygrounds.framework */,
+				4CEEFE64694EC9A87BC2E5B1 /* libPods-RxPlaygrounds.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,7 +110,6 @@
 				583068C5201612B000561CB7 /* Frameworks */,
 				583068C6201612B000561CB7 /* Headers */,
 				583068C7201612B000561CB7 /* Resources */,
-				99B01E8D6D878625EAB3F40E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,21 +180,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99B01E8D6D878625EAB3F40E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPlaygrounds/Pods-RxPlaygrounds-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -339,6 +323,7 @@
 				INFOPLIST_FILE = RxPlaygrounds/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = hu.kustra.RxPlaygrounds;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -362,6 +347,7 @@
 				INFOPLIST_FILE = RxPlaygrounds/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = hu.kustra.RxPlaygrounds;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

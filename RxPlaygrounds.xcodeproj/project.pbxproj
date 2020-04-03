@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C69CC73C9E9FCAEB42C7F9C /* Pods_RxPlaygrounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C4D6E97F4075B88294C988 /* Pods_RxPlaygrounds.framework */; };
 		583068CE201612B000561CB7 /* RxPlaygrounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 583068CC201612B000561CB7 /* RxPlaygrounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		583068D52016132500561CB7 /* frameworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583068D42016132500561CB7 /* frameworks.swift */; };
-		D32E911512051D5B259492E9 /* libPods-RxPlaygrounds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEEFE64694EC9A87BC2E5B1 /* libPods-RxPlaygrounds.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		327D1B1716B10F52DA8FAAA1 /* Pods-RxPlaygrounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPlaygrounds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPlaygrounds/Pods-RxPlaygrounds.debug.xcconfig"; sourceTree = "<group>"; };
-		4CEEFE64694EC9A87BC2E5B1 /* libPods-RxPlaygrounds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxPlaygrounds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C4D6E97F4075B88294C988 /* Pods_RxPlaygrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPlaygrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58154BC2204CC317006CE1CA /* WeakSelfDispose.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WeakSelfDispose.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		583068C9201612B000561CB7 /* RxPlaygrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPlaygrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583068CC201612B000561CB7 /* RxPlaygrounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxPlaygrounds.h; sourceTree = "<group>"; };
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D32E911512051D5B259492E9 /* libPods-RxPlaygrounds.a in Frameworks */,
+				0C69CC73C9E9FCAEB42C7F9C /* Pods_RxPlaygrounds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 		8F2D8F680477C7D6B32BC82D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4CEEFE64694EC9A87BC2E5B1 /* libPods-RxPlaygrounds.a */,
+				39C4D6E97F4075B88294C988 /* Pods_RxPlaygrounds.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -351,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hu.kustra.RxPlaygrounds;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

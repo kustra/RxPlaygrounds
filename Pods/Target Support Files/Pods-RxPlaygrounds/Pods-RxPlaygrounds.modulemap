@@ -1,4 +1,4 @@
-module Pods_RxPlaygrounds {
+framework module Pods_RxPlaygrounds {
   umbrella header "Pods-RxPlaygrounds-umbrella.h"
 
   export *
